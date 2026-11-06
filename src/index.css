@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Nunito:wght@300;400;500;600;700&display=swap');
+@import 'tailwindcss';
+
+@theme {
+  --font-display: 'Playfair Display', Georgia, serif;
+  --font-body: 'Nunito', system-ui, sans-serif;
+
+  --color-canvas: #1a1410;
+  --color-surface: #231e18;
+  --color-surface-raised: #2d2620;
+  --color-border: #3d3528;
+  --color-amber: #d4883a;
+  --color-amber-light: #e9a85c;
+  --color-amber-dim: #a3652a;
+  --color-cream: #f0e6d0;
+  --color-cream-dim: #b8a98c;
+  --color-red: #c0402a;
+  --color-green: #4a7c59;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-body);
+  background: var(--color-canvas);
+  color: var(--color-cream);
+  -webkit-font-smoothing: antialiased;
+}
+
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--color-border); border-radius: 2px; }
+
